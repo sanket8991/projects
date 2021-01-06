@@ -1,3 +1,5 @@
+'''making a simple rock paper scissor game using python'''
+
 import random  # import the random module
 
 # making a list of all the valid moves

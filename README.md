@@ -1,3 +1,3 @@
 # projects
 
-Some basic projects that i made using python.
+Some basic projects that I made.

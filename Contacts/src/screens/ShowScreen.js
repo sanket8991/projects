@@ -1,18 +1,11 @@
 import React, {useContext} from 'react';
-
 import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
-
 import {Context} from '../context/ContactContext';
-
 import { Feather } from '@expo/vector-icons';
 
 const ShowScreen = function({navigation}){
-
     const {state} = useContext(Context);
-
     const contactInfo = state.find((contact) => contact.id === navigation.getParam('id'));
-
-    console.log(contactInfo);
     return(
         <View>
             <Text style= {styles.text}>Person- {contactInfo.name}</Text>
@@ -44,9 +37,6 @@ const styles = StyleSheet.create({
     }
 
 });
-
-
-
 
 export default ShowScreen;
 

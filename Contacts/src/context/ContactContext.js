@@ -1,14 +1,8 @@
 import React, {useReducer} from 'react';
-
 import createDataContext from './createDataContext';
 
-// const ContactContext = React.createContext();
-
-
 const reducer = function(state, action){
-
     switch(action.type){
-
         case 'edit_contact':
             return state.map((contact) => {
                 if (contact.id === action.payload.id){
@@ -30,8 +24,6 @@ const reducer = function(state, action){
     }
 
 };
-
-// the names type and payload are conventional, they can be renamed as anything that we want.
 
 const addContact = function(dispatch){
     return (name, contact,email, callback) =>{

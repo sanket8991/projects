@@ -1,19 +1,12 @@
 import React, {useContext} from 'react';
-
 import {View, Text, StyleSheet, FlatList, Button, TouchableOpacity} from 'react-native';
-
 import {Context} from '../context/ContactContext';
-
 import { Feather } from '@expo/vector-icons';
 
-
 const indexScreen= function({navigation}) {
-
     const {state, addContact, deleteContact} = useContext(Context);
-
     return(
         <View>
-
             <FlatList
                 data= {state}
                 keyExtrator = {(contact) => contact.title}
@@ -49,8 +42,6 @@ indexScreen.navigationOptions = ({navigation}) => {
     }
 };
 
-
-
 const styles = StyleSheet.create({
     row:{
         flexDirection:'row',
@@ -71,7 +62,6 @@ const styles = StyleSheet.create({
         fontSize:20
     }
 });
-
 
 export default indexScreen;
 

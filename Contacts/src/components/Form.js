@@ -1,7 +1,5 @@
 import React, {useContext, useState} from 'react';
-
 import {View, StyleSheet, Text, TextInput, Button} from 'react-native';
-
 import { Context } from '../context/ContactContext';
 
 const Form= function({onSubmit, initialValues}) {
@@ -52,7 +50,6 @@ const styles = StyleSheet.create({
         marginBottom:10,
         marginLeft:5
     },
-
     input:{
         fontSize:18,
         borderWidth:1,
@@ -60,7 +57,6 @@ const styles = StyleSheet.create({
         marginBottom:15,
         padding:5,
         margin:5
-
     }
 });
 

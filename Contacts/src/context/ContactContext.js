@@ -1,9 +1,4 @@
-import React, {useReducer} from 'react';
-
 import createDataContext from './createDataContext';
-
-// const ContactContext = React.createContext();
-
 
 const reducer = function(state, action){
 

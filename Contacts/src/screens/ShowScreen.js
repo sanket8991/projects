@@ -1,9 +1,6 @@
-import React, {useContext} from 'react';
-
+import React from 'react';
 import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
-
-import { useSelector,useDispatch } from 'react-redux';
-
+import { useSelector } from 'react-redux';
 import { Feather } from '@expo/vector-icons';
 
 const ShowScreen = function({navigation}){
@@ -31,7 +28,6 @@ ShowScreen.navigationOptions = ({navigation}) => {
     };
 }
 
-
 const styles = StyleSheet.create({
     text:{
         fontSize:24,
@@ -42,9 +38,6 @@ const styles = StyleSheet.create({
     }
 
 });
-
-
-
 
 export default ShowScreen;
 

@@ -1,8 +1,7 @@
-import React, {useContext} from 'react';
-import {View, Text, StyleSheet, FlatList, Button, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {View, Text, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
 import { Feather } from '@expo/vector-icons';
-
-import {addContact,editContact,deleteContact} from '../redux/contactSlice';
+import {deleteContact} from '../redux/contactSlice';
 import { useSelector,useDispatch } from 'react-redux';
 
 const indexScreen= function({navigation}) {

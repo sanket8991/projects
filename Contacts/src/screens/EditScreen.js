@@ -1,7 +1,4 @@
-import React, {useContext, useState} from 'react';
-
-import {View, StyleSheet, Text, TextInput, Button} from 'react-native';
-
+import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import { editContact } from '../redux/contactSlice';
 import Form from '../components/Form';
@@ -25,23 +22,4 @@ const EditScreen = function({navigation}) {
 
 };
 
-
-/*const styles = StyleSheet.create({
-    label:{
-        fontSize:20,
-        marginBottom:10,
-        marginLeft:5
-    },
-
-    input:{
-        fontSize:18,
-        borderWidth:1,
-        borderColor: 'black',
-        marginBottom:15,
-        padding:5,
-        margin:5
-
-    }
-});
-*/
 export default EditScreen;

@@ -7,7 +7,6 @@ import { useSelector,useDispatch } from 'react-redux';
 const indexScreen= function({navigation}) {
     const value = useSelector((state) => state.contacts);
     const dispatch = useDispatch();
-    console.log(value);
     return(
         <View>
 

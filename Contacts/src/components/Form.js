@@ -17,7 +17,8 @@ const Form= function({onSubmit, initialValues}) {
     <Text style = {styles.label}>Enter Contact</Text>
     <TextInput 
         style = {styles.input} 
-        value ={contact} 
+        value ={contact}
+        keyboardType= "number-pad"
         onChangeText = {(text) => setContact(text)}
     />
 

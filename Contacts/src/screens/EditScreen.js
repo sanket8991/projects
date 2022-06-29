@@ -5,7 +5,6 @@ import { editContact } from '../redux/contactSlice';
 import Form from '../components/Form';
 
 const EditScreen = function({navigation}) {
-
     const id = navigation.getParam('id');
     const value = useSelector((state) => state.contacts);
     const data = value.find((contact) => contact.id === navigation.getParam('id'));

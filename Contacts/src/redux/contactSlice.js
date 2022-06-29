@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-const initialState = [{id: Math.floor(Math.random() * 99999),name:'john doe',contact:'123456789',email:'john@email.com'}]
+import {nanoid} from '@reduxjs/toolkit';
+const initialState = [{id:nanoid(), name: 'john doe',contact:'123456789',email:'john@email.com'}];
 
 const contactSlice = createSlice({
     name:'contacts',

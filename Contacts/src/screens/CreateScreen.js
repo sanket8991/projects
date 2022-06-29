@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, StyleSheet} from 'react-native';
+import { Alert} from 'react-native';
 import Form from '../components/Form';
 import {addContact} from '../redux/contactSlice';
 import {useDispatch} from 'react-redux';
@@ -25,7 +25,5 @@ const CreateScreen = function({}){
 
     )
 };
-
-const styles = StyleSheet.create({});
 
 export default CreateScreen;

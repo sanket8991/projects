@@ -1,18 +1,17 @@
 import React from 'react';
 import {View,TextInput,StyleSheet} from 'react-native';
 
-const searchBar = function({term,onTermChange,onTermSubmit}){
+const SearchBar = function({term,onTermChange}){
     return(
-        <View>
+        <View style= {styles.background}>
             <TextInput
             autoCapitalize='none'
             autoCorrect={false}
-            placeholder= 'Search...'
+            placeholder= 'Search name...'
             value={term}
             onChangeText = {newTerm => onTermChange(newTerm)}
-            onEndEditing = {() => onTermSubmit()}
             />
-                
+
         </View>
     )
 };
@@ -29,6 +28,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default searchBar;
-
-// implementation pending
+export default SearchBar;

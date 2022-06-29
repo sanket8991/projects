@@ -3,13 +3,13 @@ import {View, Text, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import {deleteContact} from '../redux/contactSlice';
 import { useSelector,useDispatch } from 'react-redux';
+import searchBar from '../components/searchBar';
 
 const indexScreen= function({navigation}) {
     const value = useSelector((state) => state.contacts);
     const dispatch = useDispatch();
     return(
         <View>
-
             <FlatList
                 data= {value}
                 keyExtrator = {(contact) => contact.id}

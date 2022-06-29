@@ -18,14 +18,15 @@ const Form= function({onSubmit, initialValues}) {
     <TextInput 
         style = {styles.input} 
         value ={contact}
-        keyboardType= "number-pad"
+        keyboardType= "phone-pad"
         onChangeText = {(text) => setContact(text)}
     />
 
     <Text style = {styles.label}>Enter Email</Text>
     <TextInput 
         style = {styles.input} 
-        value ={email} 
+        value ={email}
+        keyboardType= "email-address" 
         onChangeText = {(text) => setEmail(text)}
     />
 

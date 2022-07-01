@@ -1,5 +1,5 @@
-import React from 'react';
-import { Alert} from 'react-native';
+import React, {useEffect} from 'react';
+import { Alert, Platform,Button} from 'react-native';
 import Form from '../components/Form';
 import {addContact} from '../redux/contactSlice';
 import {useDispatch} from 'react-redux';
@@ -7,9 +7,9 @@ import {nanoid} from '@reduxjs/toolkit';
 
 const CreateScreen = function({}){
     const dispatch = useDispatch();
-
     return(
-        <Form onSubmit = {(name,contact,email) => {
+
+        <Form onSubmit = {(name,contact,email,imagePath) => {
             if (!name || !contact){
                 Alert.alert('Alert','the name and contact fields cannot be empty');
 
@@ -17,11 +17,12 @@ const CreateScreen = function({}){
                 Alert.alert('Alert','the contact should contain only numbers')
 
             }else{
-                dispatch(addContact({id:nanoid(), name:name, contact:String(Number(contact)),email:email}));
+                dispatch(addContact({id:nanoid(), name:name, contact:String(Number(contact)),email:email,imagePath:imagePath}));
                 Alert.alert('Alert','the contact was saved successfully.')
             }
         
         }}/>
+        
 
     )
 };

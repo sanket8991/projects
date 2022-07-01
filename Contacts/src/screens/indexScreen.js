@@ -14,7 +14,6 @@ const indexScreen= function({navigation}) {
     const searchFilter = (text) =>{
         setTerm(text);
         if (term !==""){
-            console.log(term);
             const result = value.filter((item) => {
                 return item.name.toLowerCase().includes(term.toLowerCase())
             });

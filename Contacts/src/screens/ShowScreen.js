@@ -1,16 +1,17 @@
 import React from 'react';
-import {View, StyleSheet, Text,Image, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Text,Image, TouchableOpacity,Button} from 'react-native';
 import { useSelector } from 'react-redux';
 import { Feather } from '@expo/vector-icons';
-
 
 const ShowScreen = function({navigation}){
     const value = useSelector((state) => state.contacts);
     const contactInfo = value.find((contact) => contact.id === navigation.getParam('id'));
+    const defaultImage = contactInfo.imagePath ? {uri: contactInfo.imagePath}: require('../../assets/default_contact_image.png');
+
     return(
         <View>
             <Image 
-                source={require('../../assets/default_contact_image.png')} 
+                source={defaultImage} 
                 style={styles.ImageStyle}
                 resizeMode='contain' 
             />
@@ -42,6 +43,7 @@ const styles = StyleSheet.create({
     },
     ImageStyle:{
         height:250,
+        width:250,
         borderWidth:1,
         borderRadius:5,
         alignSelf:'center'

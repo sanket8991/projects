@@ -11,18 +11,18 @@ const EditScreen = function({navigation}) {
     const dispatch = useDispatch();
     return(
         <Form 
-        initialValues = {{name: data.name, contact: data.contact, email:data.email}}
+        initialValues = {{name: data.name, contact: data.contact, email:data.email,imagePath:data.imagePath}}
 
-        onSubmit = {(name,contact,email) => {
+        onSubmit = {(name,contact,email,imagePath) => {
             if (!name || !contact){
-                Alert.alert(message ='the name and contact fields cannot be empty');
+                Alert.alert('Alert','the name and contact fields cannot be empty');
 
             }else if (!Number.isInteger(Number(contact)) || Number(contact) <0){
-                Alert.alert(message = 'the contact should contain only numbers')
+                Alert.alert('Alert','the contact should contain only numbers')
 
             }else{
-                dispatch(editContact({id, name,contact: String(Number(contact)),email}));;
-                Alert.alert(message = 'the contact was saved successfully.')
+                dispatch(editContact({id, name,contact: String(Number(contact)),email,imagePath}));;
+                Alert.alert('Alert','the contact was saved successfully.')
             }
 
         }}

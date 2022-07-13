@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, StyleSheet, Text, TextInput, Button,Image,Alert, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Text, TextInput, Button,Image,Alert, ScrollView} from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 
 const Form= function({onSubmit, initialValues}) {
@@ -23,37 +23,39 @@ const Form= function({onSubmit, initialValues}) {
 
 
     return(
-    <View>
-        <Image source ={defaultImage} style ={styles.ImageStyle} resizeMode='contain'/>
-        <Button title='Add your photo' onPress={() => chooseFile()}/> 
-        <Text style = {styles.label}>Enter Name</Text>
-        <TextInput 
-            style = {styles.input} 
-            value ={name}
-            onChangeText = {(text) => setName(text)}
-        />
-        <Text style = {styles.label}>Enter Contact</Text>
-        <TextInput 
-            style = {styles.input} 
-            value ={contact}
-            keyboardType= "phone-pad"
-            onChangeText = {(text) => setContact(text)}
-        />
+    <ScrollView>
+        <View>
+            <Image source ={defaultImage} style ={styles.ImageStyle} resizeMode='contain'/>
+            <Button title='Add your photo' onPress={() => chooseFile()}/> 
+            <Text style = {styles.label}>Enter Name</Text>
+            <TextInput 
+                style = {styles.input} 
+                value ={name}
+                onChangeText = {(text) => setName(text)}
+            />
+            <Text style = {styles.label}>Enter Contact</Text>
+            <TextInput 
+                style = {styles.input} 
+                value ={contact}
+                keyboardType= "phone-pad"
+                onChangeText = {(text) => setContact(text)}
+            />
 
-        <Text style = {styles.label}>Enter Email</Text>
-        <TextInput 
-            style = {styles.input} 
-            value ={email}
-            keyboardType= "email-address" 
-            onChangeText = {(text) => setEmail(text)}
-        />
+            <Text style = {styles.label}>Enter Email</Text>
+            <TextInput 
+                style = {styles.input} 
+                value ={email}
+                keyboardType= "email-address" 
+                onChangeText = {(text) => setEmail(text)}
+            />
 
-        <Button 
-            title='save'
-            onPress={() => onSubmit(name,contact,email,imagePath)}
-        />
+            <Button 
+                title='save'
+                onPress={() => onSubmit(name,contact,email,imagePath)}
+            />
 
-    </View>
+        </View>
+    </ScrollView>
     )
 };
 

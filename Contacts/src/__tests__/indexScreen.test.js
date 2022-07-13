@@ -1,10 +1,20 @@
 import React from 'react';
+import IndexScreen from "../screens/IndexScreen";
 import {render, fireEvent} from '@testing-library/react-native';
-import indexScreen from "../screens/indexScreen";
-import App from '../../App';
+import store from '../redux/store';
+import {Provider} from 'react-redux';
 
-test('can press the delete icon', () => {
+test('should render the screen properly', () => {
+    const {toJSON} = render(<Provider store = {store}><IndexScreen/></Provider>)
+    expect(toJSON()).toMatchSnapshot();
+})
+test('testing the delete icon', () => {
+    const {getByTestId} = render(<Provider store = {store}><IndexScreen/></Provider>);
     const onPressMock = jest.fn();
-    const {getByTestId} = render(<indexScreen/>);
-    console.log(getByTestId("deleteIcon"));
+
+    const foundIcon = getByTestId("deleteIcon");
+    expect(foundIcon).toBeTruthy();
+    fireEvent.press(foundIcon);
+
+    
 });

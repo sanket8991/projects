@@ -5,7 +5,7 @@ import {deleteContact} from '../redux/contactSlice';
 import { useSelector,useDispatch } from 'react-redux';
 import SearchBar from '../components/searchBar';
 
-const indexScreen= function({navigation}) {
+const IndexScreen= function({navigation}) {
     const value = useSelector((state) => state.contacts);
     const dispatch = useDispatch();
     const [term,setTerm] = useState("");
@@ -31,7 +31,6 @@ const indexScreen= function({navigation}) {
                 term= {term}
                 onTermChange = {newTerm => searchFilter(newTerm)}
             />
-            <Text>{term}</Text>
             <FlatList
                 data= {term.length < 1 ? value:filteredValue}
                 keyExtrator = {(contact) => contact.id}
@@ -54,7 +53,7 @@ const indexScreen= function({navigation}) {
     )
 }
 
-indexScreen.navigationOptions = ({navigation}) => {
+IndexScreen.navigationOptions = ({navigation}) => {
     return {
         headerRight: () => (
             <TouchableOpacity onPress={() => navigation.navigate('Create')}>
@@ -89,5 +88,5 @@ const styles = StyleSheet.create({
 });
 
 
-export default indexScreen;
+export default IndexScreen;
 

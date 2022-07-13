@@ -1,7 +1,7 @@
 import React from 'react';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import indexScreen from './src/screens/indexScreen';
+import IndexScreen from './src/screens/indexScreen';
 import ShowScreen from './src/screens/ShowScreen';
 import CreateScreen from './src/screens/CreateScreen';
 import EditScreen from './src/screens/EditScreen';
@@ -11,7 +11,7 @@ import store from './src/redux/store';
 
 const navigator= createStackNavigator(
   {
-    Index: indexScreen,
+    Index: IndexScreen,
     Show: ShowScreen,
     Create: CreateScreen,
     Edit: EditScreen

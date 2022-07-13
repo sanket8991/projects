@@ -1,7 +1,7 @@
 import React from 'react';
 import {View,TextInput,StyleSheet} from 'react-native';
 
-const SearchBar = function({term,onTermChange}){
+const SearchBar = function({term,onTermChange, ...props}){
     return(
         <View style= {styles.background}>
             <TextInput
@@ -10,6 +10,8 @@ const SearchBar = function({term,onTermChange}){
             placeholder= 'Search name...'
             value={term}
             onChangeText = {newTerm => onTermChange(newTerm)}
+            testID="searchInput"
+            {...props}
             />
 
         </View>

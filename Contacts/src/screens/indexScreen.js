@@ -41,7 +41,7 @@ const indexScreen= function({navigation}) {
                         <TouchableOpacity onPress = {() => navigation.navigate('Show', {id: item.id})}>
                             <View style ={styles.row}>
                                 <Text style = {styles.title}> {item.name}</Text>
-                                <TouchableOpacity onPress ={() => dispatch(deleteContact(item.id))}>
+                                <TouchableOpacity onPress ={() => dispatch(deleteContact(item.id))} testID="deleteIcon">
                                     <Feather style={styles.icon} name="trash" />
                                 </TouchableOpacity>
                             </View>

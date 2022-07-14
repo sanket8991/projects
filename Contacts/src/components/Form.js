@@ -38,6 +38,7 @@ const Form= function({onSubmit, initialValues}) {
                 style = {styles.input} 
                 value ={contact}
                 keyboardType= "phone-pad"
+                maxLength={13}
                 onChangeText = {(text) => setContact(text)}
             />
 

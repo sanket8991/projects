@@ -15,6 +15,6 @@ test('testing the delete icon', () => {
     const foundIcon = getByTestId("deleteIcon");
     expect(foundIcon).toBeTruthy();
     fireEvent.press(foundIcon);
-
+    
     
 });

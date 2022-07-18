@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { Alert, Platform,Button} from 'react-native';
+import { Alert,Button} from 'react-native';
 import Form from '../components/Form';
 import {addContact} from '../redux/contactSlice';
 import {useDispatch} from 'react-redux';
@@ -24,7 +24,7 @@ const CreateScreen = function({}){
                 dispatch(addContact({id:nanoid(), name:name, contact:String(Number(contact)),email:email,imagePath:imagePath}));
                 Alert.alert('Alert','the contact was saved successfully.')
             }
-        
+
         }}/>
         
 

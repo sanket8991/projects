@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1657713633293" clover="3.2.0">
-  <project timestamp="1657713633293" name="All files">
-    <metrics statements="95" coveredstatements="18" conditionals="32" coveredconditionals="1" methods="38" coveredmethods="5" elements="165" coveredelements="24" complexity="0" loc="95" ncloc="95" packages="4" files="9" classes="9"/>
+<coverage generated="1657793853787" clover="3.2.0">
+  <project timestamp="1657793853787" name="All files">
+    <metrics statements="98" coveredstatements="34" conditionals="36" coveredconditionals="2" methods="38" coveredmethods="13" elements="172" coveredelements="49" complexity="0" loc="98" ncloc="98" packages="4" files="9" classes="9"/>
     <package name="Contacts">
       <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="App.js" path="D:\test\projects\Contacts\App.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
       </file>
     </package>
     <package name="Contacts.src.components">
-      <metrics statements="26" coveredstatements="4" conditionals="6" coveredconditionals="0" methods="9" coveredmethods="2"/>
+      <metrics statements="26" coveredstatements="18" conditionals="6" coveredconditionals="1" methods="9" coveredmethods="7"/>
       <file name="Form.js" path="D:\test\projects\Contacts\src\components\Form.js">
-        <metrics statements="22" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="11" count="0" type="stmt"/>
+        <metrics statements="22" coveredstatements="14" conditionals="6" coveredconditionals="1" methods="7" coveredmethods="5"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="10" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="14" count="0" type="stmt"/>
@@ -29,31 +29,31 @@
         <line num="17" count="0" type="stmt"/>
         <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
       </file>
       <file name="searchBar.js" path="D:\test\projects\Contacts\src\components\searchBar.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
       </file>
     </package>
     <package name="Contacts.src.redux">
-      <metrics statements="13" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <metrics statements="13" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="contactSlice.js" path="D:\test\projects\Contacts\src\redux\contactSlice.js">
-        <metrics statements="12" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="12" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="19" count="0" type="stmt"/>
@@ -69,18 +69,21 @@
       </file>
     </package>
     <package name="Contacts.src.screens">
-      <metrics statements="53" coveredstatements="10" conditionals="24" coveredconditionals="1" methods="24" coveredmethods="3"/>
+      <metrics statements="56" coveredstatements="11" conditionals="28" coveredconditionals="1" methods="24" coveredmethods="4"/>
       <file name="CreateScreen.js" path="D:\test\projects\Contacts\src\screens\CreateScreen.js">
-        <metrics statements="9" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="12" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="16" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="21" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
       </file>
       <file name="EditScreen.js" path="D:\test\projects\Contacts\src\screens\EditScreen.js">
         <metrics statements="12" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="0"/>
@@ -98,13 +101,13 @@
         <line num="25" count="0" type="stmt"/>
       </file>
       <file name="IndexScreen.js" path="D:\test\projects\Contacts\src\screens\IndexScreen.js">
-        <metrics statements="23" coveredstatements="10" conditionals="6" coveredconditionals="1" methods="12" coveredmethods="3"/>
+        <metrics statements="23" coveredstatements="11" conditionals="6" coveredconditionals="1" methods="12" coveredmethods="4"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="17" count="0" type="stmt"/>
@@ -112,12 +115,12 @@
         <line num="20" count="0" type="stmt"/>
         <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="23" count="0" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="39" count="2" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
         <line num="56" count="1" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
         <line num="59" count="0" type="stmt"/>

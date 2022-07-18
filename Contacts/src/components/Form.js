@@ -32,6 +32,7 @@ const Form= function({onSubmit, initialValues}) {
                 style = {styles.input} 
                 value ={name}
                 onChangeText = {(text) => setName(text)}
+                testID='nameInput'
             />
             <Text style = {styles.label}>Enter Contact</Text>
             <TextInput 
@@ -40,6 +41,7 @@ const Form= function({onSubmit, initialValues}) {
                 keyboardType= "phone-pad"
                 maxLength={13}
                 onChangeText = {(text) => setContact(text)}
+                testID='contactInput'
             />
 
             <Text style = {styles.label}>Enter Email</Text>
@@ -48,11 +50,13 @@ const Form= function({onSubmit, initialValues}) {
                 value ={email}
                 keyboardType= "email-address" 
                 onChangeText = {(text) => setEmail(text)}
+                testID='emailInput'
             />
 
             <Button 
                 title='save'
                 onPress={() => onSubmit(name,contact,email,imagePath)}
+                testID='submitButton'
             />
 
         </View>
